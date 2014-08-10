@@ -3,30 +3,6 @@
 #include <dirent.h>
 #include <string.h>
 #include <time.h>
-//
-//int separa(int v[], int p, int r)
-//{
-//	int c = v[p], i = p + 1, j = r, t;
-//	while (1) {
-//		while (i <= r && v[i] <= c) ++i;
-//		while (c < v[j]) --j;
-//		if (i >= j) break;
-//		t = v[i], v[i] = v[j], v[j] = t;
-//		++i; --j;
-//	}
-//	v[p] = v[j], v[j] = c;
-//	return j;
-//}
-//
-//void quicksort(int vetor[], int start, int end)
-//{	
-//	int j; 
-//	if (start < end){
-//		j = separa(vetor, start, end);	
-//		quicksort(vetor, start, j-1);
-//		quicksort(vetor, j + 1, end);
-//	} 
-//}
 
 #define troca( A, B) { int t = A; A = B; B = t; } 
 void quicksort(int v[], int p, int r) {
@@ -50,7 +26,7 @@ int ordena(int tam, int tipo, int* vetor){
 		quicksort(vetor, 0, tam - 1);
 		double d = clock() - startclock, msec;
 		msec = d;
-		printf("Ordenação %i demorou=%f milissegundos", tam, msec);
+		printf(":%f milissegundos", msec);
 		return tam;
 	}
 	else {
@@ -76,7 +52,7 @@ int main()
 				sprintf(fileLenght, "%.*s", dp->d_namlen - 3 -4, &fileName[3]);
 				int fileLenghtI;
 				sscanf(fileLenght, "%d", &fileLenghtI);
-				printf("\nArquivo a processar: %s, numeros: %s \n",fileToOpen, fileLenght);
+				printf("\n %s ",fileToOpen);
 				
 				/*char * word;
 				scanf("%s", &word);*/
@@ -111,9 +87,8 @@ int main()
 					vector = NULL;
 				}
 				else
-					printf("Arquivo não encontrado");
+					printf("\nArquivo não encontrado");
 		
-				printf("\n\nProcessamento concluído");
 				/**/
 			}		
 		} 
