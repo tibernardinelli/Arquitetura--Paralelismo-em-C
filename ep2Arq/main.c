@@ -3,7 +3,40 @@
 #include <dirent.h>
 #include <string.h>
 
-#define _CRT_SECURE_NO_WARNINGS
+int separa(int v[], int p, int r)
+{
+	int c = v[p], i = p + 1, j = r, t;
+	while (1) {
+		while (i <= r && v[i] <= c) ++i;
+		while (c < v[j]) --j;
+		if (i >= j) break;
+		t = v[i], v[i] = v[j], v[j] = t;
+		++i; --j;
+	}
+	v[p] = v[j], v[j] = c;
+	return j;
+}
+
+void quicksort(int vetor[], int start, int end)
+{
+	int j; 
+	if (start < end){
+		j = separa(vetor, start, end);	
+		quicksort(vetor, start, j-1);
+		quicksort(vetor, j + 1, end);
+	} 
+}
+
+int ordena(int tam, int tipo, int* vetor){
+	if (tipo == 1){
+		quicksort(vetor, 0, tam - 1);
+		return tam;
+	}
+	else {
+		return sizeof(vetor) / sizeof(int);
+	}
+}
+
 
 int main()
 {
@@ -45,7 +78,12 @@ int main()
 						printf("%i,", vector[i]);
 					printf("\n\n");
 					
-					
+					ordena(fileLenghtI, 1, vector);
+
+					printf("\nVetor processado: ");
+					for (i = 0; i < fileLenghtI; i++)
+						printf("%i,", vector[i]);
+					printf("\n\n");
 					
 					//processa.
 					free(vector);
@@ -67,12 +105,3 @@ int main()
 	return EXIT_SUCCESS;
 }
 
-int ordena(int tam, int tipo, int* vetor){
-	if (tipo == 1){
-		quicksort(vetor, 0, tam);
-		return tam;
-	} 
-	else {
-		return sizeof(vetor)/sizeof(int);
-	}
-}
