@@ -1,4 +1,4 @@
-﻿Build started 10/08/2014 16:05:47.
+﻿Build started 10/08/2014 17:00:40.
      1>Project "C:\Users\tiago_000\Dev\ep2arq\ep2Arq\ep2Arq.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\tiago_000\Dev\ep2arq\packages\dirent.1.13.1\build\native\../..//build/native/include/ /ZI /nologo /W1 /WX- /sdl /Od /Oy- /D HAS_DIRENT /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
@@ -10,4 +10,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.52
+Time Elapsed 00:00:00.75

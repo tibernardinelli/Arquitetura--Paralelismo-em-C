@@ -2,34 +2,55 @@
 #include <stdlib.h>
 #include <dirent.h>
 #include <string.h>
+#include <time.h>
+//
+//int separa(int v[], int p, int r)
+//{
+//	int c = v[p], i = p + 1, j = r, t;
+//	while (1) {
+//		while (i <= r && v[i] <= c) ++i;
+//		while (c < v[j]) --j;
+//		if (i >= j) break;
+//		t = v[i], v[i] = v[j], v[j] = t;
+//		++i; --j;
+//	}
+//	v[p] = v[j], v[j] = c;
+//	return j;
+//}
+//
+//void quicksort(int vetor[], int start, int end)
+//{	
+//	int j; 
+//	if (start < end){
+//		j = separa(vetor, start, end);	
+//		quicksort(vetor, start, j-1);
+//		quicksort(vetor, j + 1, end);
+//	} 
+//}
 
-int separa(int v[], int p, int r)
-{
-	int c = v[p], i = p + 1, j = r, t;
-	while (1) {
-		while (i <= r && v[i] <= c) ++i;
-		while (c < v[j]) --j;
-		if (i >= j) break;
-		t = v[i], v[i] = v[j], v[j] = t;
-		++i; --j;
+#define troca( A, B) { int t = A; A = B; B = t; } 
+void quicksort(int v[], int p, int r) {
+	if (p < r) {
+		int i = p - 1, j = r, c = v[r];
+		while (1) {
+			while (v[++i] < c);
+			while (c < v[--j]) if (j == p) break;
+			if (i > j) break;
+			troca(v[i], v[j]);
+		}
+		troca(v[i], v[r]);
+		quicksort(v, p, j);
+		quicksort(v, i + 1, r);
 	}
-	v[p] = v[j], v[j] = c;
-	return j;
-}
-
-void quicksort(int vetor[], int start, int end)
-{
-	int j; 
-	if (start < end){
-		j = separa(vetor, start, end);	
-		quicksort(vetor, start, j-1);
-		quicksort(vetor, j + 1, end);
-	} 
 }
 
 int ordena(int tam, int tipo, int* vetor){
 	if (tipo == 1){
+		clock_t startclock = clock();
 		quicksort(vetor, 0, tam - 1);
+		double d = clock() - startclock, msec;
+		msec = d;
+		printf("Ordenação %i demorou=%f milissegundos", tam, msec);
 		return tam;
 	}
 	else {
@@ -57,8 +78,8 @@ int main()
 				sscanf(fileLenght, "%d", &fileLenghtI);
 				printf("\nArquivo a processar: %s, numeros: %s \n",fileToOpen, fileLenght);
 				
-				char * word;
-				scanf("%s", &word);
+				/*char * word;
+				scanf("%s", &word);*/
 
 				FILE* file = fopen(fileToOpen, "r");
 				if (file != NULL)
@@ -73,17 +94,17 @@ int main()
 					} while (i < fileLenghtI);
 					fclose(file);					
 
-					printf("\nVetor inicial: ");
-					for (i = 0; i < fileLenghtI; i++)
-						printf("%i,", vector[i]);
-					printf("\n\n");
+					//printf("\nVetor inicial: ");
+					//for (i = 0; i < fileLenghtI; i++)
+					//	printf("%i,", vector[i]);
+					//printf("\n\n");
 					
 					ordena(fileLenghtI, 1, vector);
 
-					printf("\nVetor processado: ");
-					for (i = 0; i < fileLenghtI; i++)
-						printf("%i,", vector[i]);
-					printf("\n\n");
+					//printf("\nVetor processado: ");
+					//for (i = 0; i < fileLenghtI; i++)
+					//	printf("%i,", vector[i]);
+					//printf("\n\n");
 					
 					//processa.
 					free(vector);
@@ -92,12 +113,17 @@ int main()
 				else
 					printf("Arquivo não encontrado");
 		
-				printf("Processamento concluído");
-			}
+				printf("\n\nProcessamento concluído");
+				/**/
+			}		
+		} 
+		else
+		{
+			closedir(dir);
+			break;
 		}
-		
 	}
-	closedir(dir);
+	
 
 	printf("Works!");
 	char * word;
