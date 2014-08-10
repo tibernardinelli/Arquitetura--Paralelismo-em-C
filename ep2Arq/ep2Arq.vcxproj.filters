@@ -20,50 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="E:\Dados_Ep2\arq5.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq10.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq25.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq50.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq100.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq250.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq500.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq1000.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq10000.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq25000.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq50000.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq100000.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq1000000.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq5000000.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
 </Project>

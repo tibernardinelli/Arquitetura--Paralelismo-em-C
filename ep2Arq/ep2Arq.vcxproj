@@ -83,50 +83,6 @@
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="E:\Dados_Ep2\arq10.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq100.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq1000.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq10000.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq100000.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq1000000.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq25.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq250.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq25000.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq5.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq50.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq500.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq50000.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-    <Text Include="E:\Dados_Ep2\arq5000000.txt">
-      <DeploymentContent>true</DeploymentContent>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
