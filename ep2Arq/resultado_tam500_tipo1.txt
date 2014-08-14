@@ -1,0 +1,3 @@
+
+	 tempo qs em paralelo 8.0136e-005
+	 tempo qs em serial 5.17134e-005

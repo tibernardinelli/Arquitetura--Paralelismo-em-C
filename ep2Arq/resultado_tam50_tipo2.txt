@@ -1,0 +1,3 @@
+
+	 tempo elimin em serial 7.89517e-006
+	 tempo elimin em paralelo 2.96069e-005

@@ -1,0 +1,3 @@
+
+	 tempo qs em paralelo 0.105152
+	 tempo qs em serial 0.123286
