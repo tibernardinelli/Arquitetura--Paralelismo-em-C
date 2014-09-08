@@ -1,3 +1,7 @@
 
-	 tempo elimin em serial 0.0143388
-	 tempo elimin em paralelo 0.00835783
+	 tempo elimin em serial 0.0156606
+	Resultado: 
+	[49, 51, 56, 57, ]
+	 tempo elimin em paralelo 0.0136032
+	Resultado: 
+	[48, 51, ]

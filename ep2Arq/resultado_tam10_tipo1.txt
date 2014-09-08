@@ -1,3 +1,7 @@
 
-	 tempo qs em paralelo 0.00174167
-	 tempo qs em serial 1.18426e-006
+	 tempo qs em paralelo 0.00330097
+	Resultado: 
+	[10, 10, 10, 10, 10, 49, 51, 53, 55, 56, ]
+	 tempo qs em serial 1.2288e-006
+	Resultado: 
+	[10, 10, 10, 10, 10, 49, 51, 53, 55, 56, ]

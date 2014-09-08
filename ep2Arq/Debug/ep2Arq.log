@@ -1,13 +1,18 @@
-﻿Build started 14/08/2014 01:39:10.
-     1>Project "C:\Users\tiago_000\Dev\ep2arq\ep2Arq\ep2Arq.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\tiago_000\Dev\ep2arq\packages\dirent.1.13.1\build\native\../..//build/native/include/ /ZI /nologo /W1 /WX- /sdl /Od /Oy- /D HAS_DIRENT /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+﻿Build started 08/09/2014 11:21:56.
+     1>Project "\\psf\workspace\Arquitetura--Paralelismo-em-C\ep2Arq\ep2Arq.vcxproj" on node 2 (Build target(s)).
+     1>RestorePackages:
+         "\\psf\workspace\Arquitetura--Paralelismo-em-C\.nuget\NuGet.exe" install "\\psf\workspace\Arquitetura--Paralelismo-em-C\ep2Arq\packages.config" -source ""  -NonInteractive -RequireConsent -solutionDir "\\psf\workspace\Arquitetura--Paralelismo-em-C\ "
+         Restaurando pacotes NuGet ...
+         Para evitar que o NuGet baixe pacotes durante a construção, abra a caixa de diálogo Opções do Visual Studio, clique no nó Gerenciador de Pacotes e desmarque a opção 'Allow NuGet to download missing packages'.
+         Todos os pacotes listados em packages.config já estão instalados.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"\\psf\workspace\Arquitetura--Paralelismo-em-C\packages\dirent.1.13.1\build\native\../..//build/native/include/" /ZI /nologo /W1 /WX- /sdl /Od /Oy- /D HAS_DIRENT /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
          main.c
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tiago_000\Dev\ep2arq\Debug\ep2Arq.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\tiago_000\Dev\ep2arq\Debug\ep2Arq.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tiago_000\Dev\ep2arq\Debug\ep2Arq.lib" /MACHINE:X86 Debug\main.obj
-         ep2Arq.vcxproj -> C:\Users\tiago_000\Dev\ep2arq\Debug\ep2Arq.exe
-     1>Done Building Project "C:\Users\tiago_000\Dev\ep2arq\ep2Arq\ep2Arq.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\psf\workspace\Arquitetura--Paralelismo-em-C\Debug\ep2Arq.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\psf\workspace\Arquitetura--Paralelismo-em-C\Debug\ep2Arq.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\psf\workspace\Arquitetura--Paralelismo-em-C\Debug\ep2Arq.lib" /MACHINE:X86 Debug\main.obj
+         ep2Arq.vcxproj -> \\psf\workspace\Arquitetura--Paralelismo-em-C\Debug\ep2Arq.exe
+     1>Done Building Project "\\psf\workspace\Arquitetura--Paralelismo-em-C\ep2Arq\ep2Arq.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.46
+Time Elapsed 00:00:01.27

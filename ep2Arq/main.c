@@ -155,12 +155,20 @@ int ordena(int tam, int tipo, int ** vetor){
 				quickSortParalelo(tam, vetorParalelo);
 				double end = omp_get_wtime();
 				fprintf(resultado, "\n\t tempo qs em paralelo %g", end - start);
+				fprintf(resultado, "\n\tResultado: \n\t[");
+				for (int i = 0; i < tam; i++)
+					fprintf(resultado, "%d, ", vetorParalelo[i]);
+				fprintf(resultado, "]");
 			}
 		{
 			double start = omp_get_wtime();
 			quicksort((*vetor), 0, tam - 1);
 			double end = omp_get_wtime();
 			fprintf(resultado, "\n\t tempo qs em serial %g", end - start);
+			fprintf(resultado, "\n\tResultado: \n\t[");
+			for (int i = 0; i < tam; i++)
+				fprintf(resultado, "%d, ", (*vetor)[i]);
+			fprintf(resultado, "]");
 		}
 		fclose(resultado);
 		return tam;
@@ -172,12 +180,20 @@ int ordena(int tam, int tipo, int ** vetor){
 			retorno = ordenaPorEliminacao(tam, vetor);
 			double end = omp_get_wtime();
 			fprintf(resultado, "\n\t tempo elimin em serial %g", end - start);
+			fprintf(resultado, "\n\tResultado: \n\t[");
+			for (int i = 0; i < retorno; i++)
+				fprintf(resultado, "%d, ", (*vetor)[i]);
+			fprintf(resultado, "]");
 		}
 			{
 				double start = omp_get_wtime();
 				retorno = ordenaPorEliminacaoParalela(tam, &vetorParalelo);
 				double end = omp_get_wtime();
 				fprintf(resultado, "\n\t tempo elimin em paralelo %g", end - start);
+				fprintf(resultado, "\n\tResultado: \n\t[");
+				for (int i = 0; i < retorno; i++)
+					fprintf(resultado, "%d, ", (vetorParalelo)[i]);
+				fprintf(resultado, "]");
 			}
 
 		fclose(resultado);
